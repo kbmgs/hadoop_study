@@ -41,6 +41,7 @@ public class WordCountDriver {
 
         // 6.设置输入路径和输出路径
         FileInputFormat.setInputPaths(job, new Path("F:\\BaiduNetdiskDownload\\尚硅谷大数据技术之Hadoop3.x\\资料\\资料\\11_input\\inputword"));
+        // 在mapreduce中，如果输出路径存在，则程序报错
         FileOutputFormat.setOutputPath(job, new Path("F:\\BaiduNetdiskDownload\\尚硅谷大数据技术之Hadoop3.x\\资料\\资料\\output1"));
 
         // 7.提交job
